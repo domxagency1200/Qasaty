@@ -1,4 +1,12 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "version": 2,
+  "builds": [
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "**/*.png",  "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/",              "dest": "/index.html" },
+    { "src": "/privacy",       "dest": "/privacy.html" },
+    { "src": "/(.*)",          "dest": "/$1" }
+  ]
 }
