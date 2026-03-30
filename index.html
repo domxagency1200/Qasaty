@@ -70,8 +70,25 @@
       font-weight: 900;
       color: var(--text);
       letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
     }
-    .nav-logo span { color: var(--gold); }
+    .nav-logo-icon {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold);
+      border-radius: 8px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+    .nav-logo-icon svg {
+      width: 100%;
+      height: 100%;
+    }
     .nav-links {
       display: flex;
       gap: 2rem;
@@ -681,8 +698,22 @@
       color: var(--gold);
       letter-spacing: 0.05em;
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
     }
-    .footer-brand-name span { color: var(--gold); }
+    .footer-logo-icon {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold);
+      border-radius: 7px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+    .footer-logo-icon svg { width: 100%; height: 100%; }
     .footer-brand-desc {
       color: rgba(255,255,255,0.45);
       font-size: 0.88rem;
@@ -773,7 +804,17 @@
   <!-- ══ NAVBAR ══ -->
   <nav>
     <div class="container nav-inner">
-      <div class="nav-logo">قَصتي<span>.</span></div>
+      <div class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+            <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+            <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+            <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+          </svg>
+        </div>
+        قَصتي
+      </div>
       <ul class="nav-links">
         <li><a href="#top">الرئيسية</a></li>
         <li><a href="#features">المميزات</a></li>
@@ -1011,7 +1052,17 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand-name">قَصتي<span>.</span></div>
+          <div class="footer-brand-name">
+            <div class="footer-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+              </svg>
+            </div>
+            قَصتي
+          </div>
           <p class="footer-brand-desc">المنصة الأولى لإدارة الصالونات وتجربة الحجوزات الذكية، مصممة بأعلى معايير الجودة للارتقاء بأعمالك.</p>
         </div>
         <div class="footer-col">
