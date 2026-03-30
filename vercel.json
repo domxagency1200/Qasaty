@@ -1,6 +1,4 @@
 {
   "outputDirectory": ".",
-  "rewrites": [
-    { "source": "/privacy", "destination": "/privacy.html" }
-  ]
+  "cleanUrls": false
 }
